@@ -1,0 +1,16 @@
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+}
+
+.matrix-input {
+  width: 50px;
+  height: 20px;
+  padding: 5px;
+  caret-color: auto;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora de Distância Euclidiana</title>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="user-scalable=no" />
+
+    <link rel="icon" href="../../GL.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/Portifolio/index.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <br />
+    <div class="title-bar">
+      <h1>
+        <a class="color">Calculadora de Distância Euclidiana</a
+        ><button
+          class="common transition"
+          style="position: absolute; right: 0"
+          onclick="goBack()"
+        >
+          Voltar
+        </button>
+      </h1>
+    </div>
+    <br />
+    <div style="display: flex; align-items: center;">
+      <div style="margin-right: 20px">
+        <p class="common">
+          Ponto 1:<br /><br />
+          <label for="x1" class="common"
+            >x1:<input type="number" id="x1" name="x1" /></label
+          ><br /><br />
+          <label for="y1" class="common"
+            >y1:<input type="number" id="y1" name="y1"
+          /></label>
+        </p>
+      </div>
+
+      <div style="margin-right: 20px">
+        <p class="common">
+          Ponto 2:<br /><br />
+          <label for="x2" class="common"
+            >x2:<input type="number" id="x2" name="x2" /></label
+          ><br /><br />
+          <label for="y2" class="common"
+            >y2:<input type="number" id="y2" name="y2"
+          /></label>
+        </p>
+      </div>
+      <br />
+      <div style="width: 500px; height: 250px; margin-right: 25px ">
+        <canvas id="myChart" style="display: none"></canvas>
+      </div>
+    </div>
+    <button id="calculateButton" onclick="calculateDistance()">
+      Calcular Distância
+    </button>
+    <br />
+    <br />
+    <div class="common" id="resultado" style="display: none"></div>
+    <br />
+    <br />
+    <div class="text-primary">
+      <p>
+        Este é um programa de uma Calculadora de Distância Euclidiana. A
+        distância euclidiana é uma medida de distância entre dois pontos em um
+        espaço euclidiano (como o espaço bidimensional).
+        <br /><br />
+        O programa funciona da seguinte maneira:
+        <br />1. Você insere as coordenadas dos dois pontos que deseja calcular
+        a distância. As coordenadas são (x1, y1) para o primeiro ponto e (x2,
+        y2) para o segundo ponto. <br />2. Após inserir as coordenadas, clique
+        no botão Calcular Distância. <br /><br />
+        Lembre-se de que você precisa inserir números válidos nas caixas de
+        entrada para que o cálculo funcione corretamente. Se você inserir algo
+        que não seja um número, o programa não funcionará como esperado.
+      </p>
+    </div>
+
+    <script src="./Calculadora_de_Distancia_Euclidiana.js"></script>
+    <script src="/Portifolio/navbar.js"></script>
+    
+  </body>
+</html>

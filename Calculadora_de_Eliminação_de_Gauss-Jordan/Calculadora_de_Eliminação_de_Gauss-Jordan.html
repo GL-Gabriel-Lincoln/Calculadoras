@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora de Eliminação de Gauss-Jordan 3x4</title>
+    <meta name="viewport" content="user-scalable=no" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/Portifolio/index.css"/>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./Calculadora_de_Eliminação_de_Gauss-Jordan.css"
+    />
+    <link rel="icon" href="/Portifolio/GL.ico" type="image/x-icon" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.4.0/math.min.js"></script>
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <br />
+    <div class="title-bar">
+      <h1>
+        <a class="color">Calculadora de Eliminação de Gauss-Jordan 3x4</a
+        ><button
+          class="common transition"
+          style="position: absolute; right: 0"
+          onclick="goBack()"
+        >
+          Voltar
+        </button>
+      </h1>
+    </div>
+    <br />
+    <table>
+      <tr>
+        <td>
+          <label for="l1c1" class="common"
+            >L1-C1:<input type="text" id="l1c1" class="matrix-input" required
+          /></label>
+        </td>
+        <td>
+          <label for="l1c2" class="common"
+            >L1-C2:<input type="text" id="l1c2" class="matrix-input" required
+          /></label>
+        </td>
+        <td>
+          <label for="l1c3" class="common"
+            >L1-C3:<input type="text" id="l1c3" class="matrix-input" required
+          /></label>
+        </td>
+        <td>
+          <label for="l1c4" class="common"
+            >L1-C4:<input type="text" id="l1c4" class="matrix-input" required
+          /></label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="l2c1" class="common"
+            >L2-C1:<input type="text" id="l2c1" class="matrix-input" required
+          /></label>
+        </td>
+        <td>
+          <label for="l2c2" class="common"
+            >L2-C2:<input type="text" id="l2c2" class="matrix-input" required
+          /></label>
+        </td>
+        <td>
+          <label for="l2c3" class="common"
+            >L2-C3:<input type="text" id="l2c3" class="matrix-input" required
+          /></label>
+        </td>
+        <td>
+          <label for="l2c4" class="common"
+            >L2-C4:<input type="text" id="l2c4" class="matrix-input" required
+          /></label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="l3c1" class="common"
+            >L3-C1:<input type="text" id="l3c1" class="matrix-input" required
+          /></label>
+        </td>
+        <td>
+          <label for="l3c2" class="common"
+            >L3-C2:<input type="text" id="l3c2" class="matrix-input" required
+          /></label>
+        </td>
+        <td>
+          <label for="l3c3" class="common"
+            >L3-C3:<input type="text" id="l3c3" class="matrix-input" required
+          /></label>
+        </td>
+        <td>
+          <label for="l3c4" class="common"
+            >L3-C4:<input type="text" id="l3c4" class="matrix-input" required
+          /></label>
+        </td>
+      </tr>
+    </table>
+    <br />
+    <div style="text-align: left; margin-bottom: 0">
+      <p class="common" style="margin-top: 0">
+        L = LINHA<br />
+        C = COLUNA
+      </p>
+    </div>
+    <div style="text-align: center">
+      <button id="calculateButton" onclick="gaussJordan()">Calcular</button>
+    </div>
+    <br />
+    <div style="text-align: center">
+      <div class="common" style="display: none" id="matrix"></div>
+    </div>
+
+    <script src="./Calculadora_de_Eliminação_de_Gauss-Jordan.js"></script>
+    <script src="/Portifolio/navbar.js"></script>
+    
+  </body>
+</html>

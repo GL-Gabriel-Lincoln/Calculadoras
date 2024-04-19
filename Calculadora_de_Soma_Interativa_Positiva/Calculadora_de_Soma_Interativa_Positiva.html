@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora de Soma Interativa Positiva</title>
+
+    <meta name="viewport" content="user-scalable=no" />
+
+    <meta charset="UTF-8" />
+
+    <link rel="icon" href="../../GL.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/Portifolio/index.css"/>
+
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <br />
+    <div class="title-bar">
+      <h1>
+        <a class="color">Calculadora de Soma Interativa Positiva</a
+        ><button
+          class="common transition"
+          style="position: absolute; right: 0"
+          onclick="goBack()"
+        >
+          Voltar
+        </button>
+      </h1>
+    </div>
+    <br />
+
+    <div class="text-primary">
+      <p>
+        Esse é um programa que soma
+        <span style="color: red">números inteiros positivos</span> informados
+        pelo usuário <span style="color: red">(um de cada vez)</span> até que um
+        <span style="color: red">número negativo</span> seja informado e então
+        imprime o resultado da soma na tela.
+      </p>
+    </div>
+    <br />
+    <button
+      id="calculateButton"
+      onclick="calculateSum()"
+      onclick="clearResult()"
+      class="common"
+    >
+      Clique aqui
+    </button>
+    <br /><br />
+    <div class="common aa" id="result"></div>
+
+    <script src="Calculadora_de_Soma_Interativa_Positiva.js"></script>
+    <script src="/Portifolio/navbar.js"></script>
+    
+  </body>
+</html>

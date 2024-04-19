@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora de Determinante de Matriz 3x3</title>
+
+    <meta name="viewport" content="user-scalable=no" />
+
+    <meta charset="UTF-8" />
+
+    <link rel="icon" href="../../GL.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/Portifolio/index.css"/>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./Calculadora_de_Determinante_de_Matriz_3x3.css"
+    />
+
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <br />
+    <div class="title-bar">
+      <h1>
+        <a class="color">Calculadora de Determinante de Matriz 3x3</a>
+        <button
+          class="common transition"
+          style="position: absolute; right: 0"
+          onclick="goBack()"
+        >
+          Voltar
+        </button>
+      </h1>
+    </div>
+    <br />
+
+    <div style="text-align: center; margin-bottom: 0">
+      <p class="common" style="margin-top: 0">Matriz 3x3:</p>
+    </div>
+
+    <table>
+      <!-- Primeira linha da matriz -->
+      <tr>
+        <td>
+          <label for="l1c1" class="common"
+            >L1-C1:<input type="text" id="l1c1" class="matrix-input" required
+          /></label>
+        </td>
+        <td>
+          <label for="l1c2" class="common"
+            >L1-C2:<input type="text" id="l1c2" class="matrix-input" required
+          /></label>
+        </td>
+        <td>
+          <label for="l1c3" class="common"
+            >L1-C3:<input type="text" id="l1c3" class="matrix-input" required
+          /></label>
+        </td>
+      </tr>
+
+      <!-- Segunda linha da matriz -->
+      <tr>
+        <td>
+          <label for="l2c1" class="common"
+            >L2-C1:<input type="text" id="l2c1" class="matrix-input" required
+          /></label>
+        </td>
+        <td>
+          <label for="l2c2" class="common"
+            >L2-C2:<input type="text" id="l2c2" class="matrix-input" required
+          /></label>
+        </td>
+        <td>
+          <label for="l2c3" class="common"
+            >L2-C3:<input type="text" id="l2c3" class="matrix-input" required
+          /></label>
+        </td>
+      </tr>
+
+      <!-- Terceira linha da matriz -->
+      <tr>
+        <td>
+          <label for="l3c1" class="common"
+            >L3-C1:<input type="text" id="l3c1" class="matrix-input" required
+          /></label>
+        </td>
+        <td>
+          <label for="l3c2" class="common"
+            >L3-C2:<input type="text" id="l3c2" class="matrix-input" required
+          /></label>
+        </td>
+        <td>
+          <label for="l3c3" class="common"
+            >L3-C3:<input type="text" id="l3c3" class="matrix-input" required
+          /></label>
+        </td>
+      </tr>
+    </table>
+
+    <br />
+    <div style="text-align: left; margin-bottom: 0">
+      <p class="common" style="margin-top: 0">
+        L = LINHA<br />
+        C = COLUNA
+      </p>
+    </div>
+
+    <div style="text-align: center">
+      <button id="calculateButton" onclick="calculateDeterminant()">
+        Enviar
+      </button>
+    </div>
+
+    <br />
+    <div style="text-align: center">
+      <div class="common" style="display: none" id="result"></div>
+    </div>
+
+    <script src="./Calculadora_de_Determinante_de_Matriz_3x3.js"></script>
+
+    <script src="/Portifolio/navbar.js"></script>
+    
+  </body>
+</html>

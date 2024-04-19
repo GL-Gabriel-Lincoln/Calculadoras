@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora de IMC</title>
+
+    <meta name="viewport" content="user-scalable=no"/>
+
+    <meta charset="UTF-8" />
+
+    <link rel="icon" href="../../GL.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/Portifolio/index.css"/>
+
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <br />
+    <div class="title-bar">
+      <h1>
+        <a class="color">Calculadora de IMC</a
+        ><button
+          class="common transition"
+          style="position: absolute; right: 0"
+          onclick="goBack()"
+        >
+          Voltar
+        </button>
+      </h1>
+    </div>
+    <br />
+
+    <br />
+    <a>
+      Peso(kg):
+      <input type="text" id="weight" name="weight" oninput="clearResult()"
+    /></a>
+    <br /><br /><br />
+    <a>
+      Altura(m):
+      <input type="text" id="height" name="height" oninput="clearResult()"
+    /></a>
+    <br /><br />
+    <button id="calculateButton" onclick="calculateBMI()">Calcular IMC</button>
+    <br /><br />
+    <div class="common aa" id="result"></div>
+    <br />
+    <div class="text-primary">
+      <p>
+        IMC, ou Índice de Massa Corporal, é um cálculo que permite avaliar se a
+        pessoa está dentro do peso que é considerado ideal para a sua altura.
+        <br /><br />Digite o seu peso e a sua altura para saber o seu IMC
+      </p>
+    </div>
+
+    <!-- Em HTML, usamos tags de entrada para receber a entrada do usuário (linhas "printf("Digite seu peso: ");", "scanf("%f", &weight);") -->
+    <!-- Em HTML, usamos tags de entrada para receber a entrada do usuário (linhas "printf("Digite sua altura: ");", "scanf("%f", &height);") -->
+
+    <script src="Calculadora_de_IMC.js"></script>
+
+    <script src="/Portifolio/navbar.js"></script>
+    
+  </body>
+</html>
