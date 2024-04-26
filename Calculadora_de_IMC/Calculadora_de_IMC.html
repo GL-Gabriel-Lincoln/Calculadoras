@@ -3,13 +3,13 @@
   <head>
     <title>Calculadora de IMC</title>
 
-    <meta name="viewport" content="user-scalable=no"/>
+    <meta name="viewport" content="user-scalable=no" />
 
     <meta charset="UTF-8" />
 
     <link rel="icon" href="/Portifolio/GL.ico" type="image/x-icon" />
 
-    <link rel="stylesheet" type="text/css" href="/Portifolio/index.css"/>
+    <link rel="stylesheet" type="text/css" href="/Portifolio/index.css" />
 
     <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
@@ -32,20 +32,32 @@
     <br />
 
     <br />
-    <a>
-      Peso(kg):
-      <input type="text" id="weight" name="weight" oninput="clearResult()"
-    /></a>
-    <br /><br /><br />
-    <a>
-      Altura(m):
-      <input type="text" id="height" name="height" oninput="clearResult()"
-    /></a>
-    <br /><br />
-    <button id="calculateButton" onclick="calculateBMI()">Calcular IMC</button>
-    <br /><br />
-    <div class="common aa" id="result"></div>
+    <div
+      style="
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      "
+    >
+      <div class="common">
+        Peso(kg):
+        <input type="text" id="weight" name="weight"  oninput="clearResult()" />
+      </div>
+      <br>
+      <div class="common">
+        Altura(m):
+        <input type="text" id="height" name="height" oninput="clearResult()" />
+      </div>
+      <br>
+      <button class="common" id="calculateButton" onclick="calculateBMI()">
+        Calcular IMC
+      </button>
+      <br>
+      <div class="common aa" id="result"></div>
+    </div>
     <br />
+
     <div class="text-primary">
       <p>
         IMC, ou Índice de Massa Corporal, é um cálculo que permite avaliar se a
@@ -60,6 +72,5 @@
     <script src="Calculadora_de_IMC.js"></script>
 
     <script src="/Portifolio/navbar.js"></script>
-    
   </body>
 </html>

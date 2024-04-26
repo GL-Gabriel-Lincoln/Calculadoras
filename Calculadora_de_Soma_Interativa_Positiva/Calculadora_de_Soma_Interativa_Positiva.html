@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/Portifolio/GL.ico" type="image/x-icon" />
 
-    <link rel="stylesheet" type="text/css" href="/Portifolio/index.css"/>
+    <link rel="stylesheet" type="text/css" href="/Portifolio/index.css" />
 
     <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
@@ -41,19 +41,27 @@
       </p>
     </div>
     <br />
-    <button
-      id="calculateButton"
-      onclick="calculateSum()"
-      onclick="clearResult()"
-      class="common"
+    <div
+      style="
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      "
     >
-      Clique aqui
-    </button>
-    <br /><br />
-    <div class="common aa" id="result"></div>
+      <button
+        id="calculateButton"
+        onclick="calculateSum()"
+        onclick="clearResult()"
+        class="common"
+      >
+        Clique aqui
+      </button>
+      <br /><br />
+      <div class="common aa" id="result"></div>
+    </div>
 
     <script src="Calculadora_de_Soma_Interativa_Positiva.js"></script>
     <script src="/Portifolio/navbar.js"></script>
-    
   </body>
 </html>

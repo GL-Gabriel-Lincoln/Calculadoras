@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/Portifolio/GL.ico" type="image/x-icon" />
 
-    <link rel="stylesheet" type="text/css" href="/Portifolio/index.css"/>
+    <link rel="stylesheet" type="text/css" href="/Portifolio/index.css" />
 
     <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
@@ -31,24 +31,32 @@
     </div>
     <br />
 
-    <br />
-    <a>
-      Valor de a: <input type="text" id="a" name="a" oninput="clearResult()"
-    /></a>
-    <br /><br /><br />
-    <a>
-      Valor de b: <input type="text" id="b" name="b" oninput="clearResult()"
-    /></a>
-    <br /><br /><br />
-    <a>
-      Valor de c: <input type="text" id="c" name="c" oninput="clearResult()"
-    /></a>
-    <br /><br />
-    <button id="calculateButton" onclick="calculateBMI()">
-      Calcular Média
-    </button>
-    <br /><br />
-    <div class="common aa" id="result"></div>
+    <div
+      style="
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      "
+    >
+      <a>
+        Valor de a: <input type="text" id="a" name="a" oninput="clearResult()"
+      /></a>
+      <br />
+      <a>
+        Valor de b: <input type="text" id="b" name="b" oninput="clearResult()"
+      /></a>
+      <br />
+      <a>
+        Valor de c: <input type="text" id="c" name="c" oninput="clearResult()"
+      /></a>
+      <br />
+      <button id="calculateButton" onclick="calculateBMI()">
+        Calcular Média
+      </button>
+      <br />
+      <div class="common aa" id="result"></div>
+    </div>
     <br />
     <div class="text-primary">
       <p>
@@ -64,6 +72,5 @@
     <script src="Calculadora_de_Media_Aritmetica.js"></script>
 
     <script src="/Portifolio/navbar.js"></script>
-    
   </body>
 </html>
